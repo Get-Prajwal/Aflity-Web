@@ -14,22 +14,31 @@
   #banner{
     height:360px;
     width:100%;
-    object-fit:cover
+    object-fit:cover;
+    margin-bottom:8px
   }
 </style>
     
   </head>
   <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" id = "banner" src="static/homepage2.jpg" height='320'>
     <div class="container">
 
       <h1 class="text-center mt-4 mb-4">Afility Engineering</h1>
     
-      <img class="img-fluid" id = "banner" src="static/homepage2.jpg" height='320'>
-  
-      <h2 class="text-center mt-4 mb-4">About Afility</h2>
-      <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing             elit, sed do eiusmod tempor incididunt ut labore et            dolore magna aliqua. Ut enim ad minim veniam, quis             nostrud exercitation ullamco laboris nisi ut aliquip           ex        ea commodo consequat. Duis aute irure dolor           in reprehenderit in voluptate velit esse cillum               dolore eu fugiat nulla pariatur. Excepteur sint                 occaecat cupidatat non proident, sunt in culpa qui             officia deserunt mollit anim id est laborum.</p>
+        <div class ="row mb-4">
+          <div class="col-md-6">
     
-      </div>
+  
+      <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing             elit, sed do eiusmod tempor incididunt ut labore et            dolore magna aliqua. Ut enim ad minim veniam, quis             nostrud exercitation ullamco laboris nisi ut aliquip           ex        ea commodo consequat. Duis aute irure dolor           in reprehenderit in voluptate velit esse cillum               dolore eu fugiat nulla pariatur. Excepteur sint                 occaecat cupidatat non proident, sunt in culpa qui             officia deserunt mollit anim id est laborum.</p>
+            
+          </div>
+          <div class="d-none d-md-block col-md-6">
+            <img src="static/people_working.jpg"                                 style = "height:320px; border-radius:4px;">
+          </div>
+        
+        </div>
 
     <div class="container">
   
@@ -40,10 +49,12 @@
       
     
 
-    <div class = "text-center">
-      <button type="button" class="btn btn-outline-primary mb-4">Contact Us</button>
-      <p> Copyright 2024, Afility Engineering</p>
-      
-    </div>
+      <div class="text-center">
+        <a href="mailto:afility@gmail.com" target="_blank">
+          <button type="button" class="btn btn-outline-primary mt-4">Contact Us</button>
+        </a>
+        {% include 'footer.html' %}
+      </div>
+
   </body>
 </html>
