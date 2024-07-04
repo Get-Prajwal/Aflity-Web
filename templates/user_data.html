@@ -1,0 +1,110 @@
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">User ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Password</th>
+      <th scope="col">Project</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>
+            <table class="table border-bottom">
+                
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>
+                                {{user['id']}}
+                            
+                        
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    
+                </tbody>
+            </table>
+            </td>
+            <td>
+            <table class="table border-bottom">
+                <thead>
+                    
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>
+                                {{user['name']}}
+
+
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>   
+        </td>
+        <td>
+            <table class="table border-bottom">
+                <thead>
+
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>
+                                {{user['email']}}
+
+
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </td>
+        <td>
+            <table class="table border-bottom">
+                <thead>
+
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>
+                                {{user['password']}}
+
+
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </td>
+        <td>
+            <table class=" table border-bottom">
+                <thead>
+
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>
+                                {{user['project']}}
+
+
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </td>
+    </tr>
+  </tbody>
+</table>
+
+  
+
+
